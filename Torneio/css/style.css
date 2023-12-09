@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #1c1c20;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1330px;
+}
+
+/* NavBar 
+-----------------------------------*/
+
+.header-nav{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-nav li{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.logo{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link{
+    font-size: 13px;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    color: #0088d2;
+}
+
+.cad, .entrar{
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.entrar{
+    background-color: #8952e0;
+}
+
+.cad{
+    background-color: #8952e0;/*rgba(255, 255, 255, 0.09)*/
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Conteudo topo principal
+----------------------------------------*/
+
+.topo{
+    height: 100vh;
+    background-image: url(../img/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-topo h1{
+    color: #000;
+    font-size: 3em;
+    margin: 15px 0;
+    text-align: center;
+}
+
+
+.button-home{
+    padding: 15px 40px;
+    border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button-home:hover{
+    color: #000;
+    border: 1px solid #000;
+    background: none;
+}
+
+/* Conteudo section principal
+-------------------------------*/
+
+.campeonatos{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    padding: 0 34px;
+    display: flex;
+    gap: 30px;
+}
+
+.textos-campeonatos{
+    width: 50%;
+}
+
+.imagem-campeonatos{
+    width: 50%;
+}
+
+.textos-campeonatos h2{
+    color: #fff;
+    font-size: 2em;
+    margin-block: 15px;
+}
+
+.textos-campeonatos p{
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.textos-campeonatos ul li{
+    color: #fff;
+    font-size: 1.1em;
+    margin-top: 8px;
+    margin-left: 34px;
+}
+
+.imagem-campeonatos img{
+    border-radius: 50px;
+}
+
+/* Footer
+------------------------------*/
+
+footer{
+    padding: 30px 34px;
+    width: 100%;
+    background-color: #000;
+}
+
+footer ul{
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1em;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+footer ul li:not(:last-child)::after{
+    content: "|";
+    position: relative;
+    left: 13px;
+    color: #fff;
+}
+
+footer .icon{
+    font-size: 2em;
+    height: 80px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 20px;
+}
+
+/* Página torneios
+------------------------------*/
+
+#torneio-back{
+    width: 100%;
+    height: 100%;
+}
+
+#header-torneio-img img{
+    width: 100%;
+}
+
+#div-jogo{
+    height: 100%;
+    margin-inline: 50px;
+}
+
+#torneio-img-texto{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#torneio-img-texto img{
+    margin-top: -110px;
+    width: 140px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+#torneio-img-texto h2{
+    margin-top: 15px;
+    font-size: 2em;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#torneios-disponiveis{
+    color: #fff;
+    margin-block-start: 40px;
+}
+
+#torneios-disponiveis h1{
+    font-size: 1.7em;
+    letter-spacing: 1px;
+}
+
+#div-torneios{
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.card-torneio{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-inline: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.card-torneio img{
+    border-radius: 13px;
+    width: 200px;
+    height: 112px;
+}
+
+.texto-card-torneio{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.start-days{
+    color: #adb5bd;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ligas{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-block: 3px;
+}
+
+.regiao{
+    color: #adb5bd;
+    font-size: 12px;
+}
+
+.textos-icons{
+    margin-top: 5px;
+}
+
+.upcoming{
+    padding: 1px 6px;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(52, 127, 219, 0.6);
+    border-radius: 50px;
+}
+
+.icons{
+    padding-block: 0.2rem;
+    padding-inline-start: 0.7rem;
+    padding-inline-end: 0.7rem;
+    background-color: #34363c;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+/*
+    border-left-width: 1px;
+    border-left-style: solid;
+    rgba(255, 255, 255, 0.06)
+*/
+
+.informacoes-premio{
+    display: flex;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline-end: 2rem;
+    text-align: end;
+}
+
+.premio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 112px;
+    margin-inline-end: 2rem;
+    text-align: end;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: rgba(255, 255, 255, 0.06)
+}
+
+.hospedado{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #adb5bd;
+}
+
+.liga-2{
+    padding-block-start: 3px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Página de inscrever-se
+------------------------------*/
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+}
+
+#login{
+    background: #161616;
+    width: 450px;
+    height: 550px;
+    border-radius: 40px;
+}
+
+.form{
+    padding: 30px;
+    width: 100%;
+}
+
+#login h1{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+#login h2{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+#login form input.texto:not(:first-child){
+    margin-top: 40px;
+}
+
+#login form input.texto{
+    font-size: 15px;
+    padding: 0 15px;
+    border: 0;
+}
+
+#login form input.texto, .button-login{
+    width: 100%;
+    height: 50px;
+    border-radius: 28px;
+}
+
+#login label{
+    color: #fff;
+    display: block;
+}
+
+#login .label-pergunta{
+    margin-block: 20px;
+    text-align: center;
+}
+
+#login #modo-de-jogo{
+    padding: 0px 15px;
+    border-radius: 28px;
+    width: 100%;
+    height: 50px;
+    color: #000;
+}
+
+#login #modo-de-jogo option{
+    background-color: #161616;
+    color: #fff;
+}
+
+.button-login{
+    width: 100%;
+    cursor: pointer;
+    margin-top: 30px;
+    border: 0;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.button-login:hover{
+    background: #000;
+    color: #fff;
+}
+
+#login form input:hover{
+    border: 2px solid #000;
+}
+
+/* Responsivo
+------------------------------*/
+
+
+
+@media (max-width: 768px){
+    
+
+    .texto-topo h1{
+        font-size: 2em;
+    }
+
+    #torneio-img-texto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+
+    #torneio-img-texto h2{
+        font-size: 25px;
+    }
+
+    .card-torneio{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .texto-card-torneio{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .texto-card-torneio img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .textos{
+        width: 100%;
+        padding: 5px 15px;
+        margin-bottom: 25px;
+    }
+
+    .informacoes-premio{
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-color: rgba(255, 255, 255, 0.06);
+        padding: 0 15px;
+        width: 100%;
+        justify-content: space-between;
+        margin-inline-end: 0;
+    }
+
+    .informacoes{
+        text-align: start;
+        margin: 0;
+    }
+
+    .premio{
+        margin-inline-end: 0;
+        border: 0;
+        text-align: end;
+    }
+
+    .hospedado{
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #adb5bd;
+    }
+    
+    .liga-2{
+        padding-block-start: 3px;
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 992px) {
+    .hamburguer{
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: 100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #000; /*#101026 cor azul escuro*/
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    .cad, .entrar{
+        padding: 0;
+        background-color: #000;
+    }
+}
+
+@media (max-width: 1200px){
+    
+    .campeonatos{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textos-campeonatos{
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    .imagem-campeonatos{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    .texto-topo h1{
+        font-size: 1.7em;
+    }
+
+    button{
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+
+    .logo{
+        font-size: 1.7rem;
+    }
+
+    footer h1{
+        font-size: 1.7em;
+    }
+
+    #torneio-img-texto h2{
+        font-size: 18px;
+    }
+
+    #torneios-disponiveis h1{
+        font-size: 1.4rem;
+    }
+}
